@@ -42,7 +42,7 @@ import com.vaadin.flow.data.binder.BinderValidationStatus;
 import com.vaadin.flow.server.StreamResource;
 import com.vaadin.flow.shared.Registration;
 
-import pl.pdfviewer.PdfViewer;
+// import pl.pdfviewer.PdfViewer;
 
 /**
  * Abstract base class for dialogs adding, editing or deleting items.
