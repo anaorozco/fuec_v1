@@ -42,9 +42,9 @@ public class ReviewEditorDialog extends AbstractEditorDialog<Review> {
 
     private ComboBox<Category> categoryBox = new ComboBox<>();
     private ComboBox<String> scoreBox = new ComboBox<>();
-    private DatePicker lastTasted = new DatePicker();
+    private DatePicker lastserved = new DatePicker();
     private TextField beverageName = new TextField();
-    private TextField timesTasted = new TextField();
+    private TextField timesserved = new TextField();
 
     public ReviewEditorDialog(BiConsumer<Review, Operation> saveHandler,
             Consumer<Review> deleteHandler) {
@@ -73,14 +73,14 @@ public class ReviewEditorDialog extends AbstractEditorDialog<Review> {
     }
 
     private void createDatePicker() {
-        lastTasted.setLabel("Last tasted");
-        lastTasted.setRequired(true);
-        lastTasted.setMax(LocalDate.now());
-        lastTasted.setMin(LocalDate.of(1, 1, 1));
-        lastTasted.setValue(LocalDate.now());
-        getFormLayout().add(lastTasted);
+        lastserved.setLabel("Last served");
+        lastserved.setRequired(true);
+        lastserved.setMax(LocalDate.now());
+        lastserved.setMin(LocalDate.of(1, 1, 1));
+        lastserved.setValue(LocalDate.now());
+        getFormLayout().add(lastserved);
 
-        getBinder().forField(lastTasted)
+        getBinder().forField(lastserved)
                 .withValidator(Objects::nonNull,
                         "The date should be in MM/dd/yyyy format.")
                 .withValidator(new DateRangeValidator(
@@ -105,13 +105,13 @@ public class ReviewEditorDialog extends AbstractEditorDialog<Review> {
     }
 
     private void createTimesField() {
-        timesTasted.setLabel("Times tasted");
-        timesTasted.setRequired(true);
-        timesTasted.setPattern("[0-9]*");
-        timesTasted.setPreventInvalidInput(true);
-        getFormLayout().add(timesTasted);
+        timesserved.setLabel("Times served");
+        timesserved.setRequired(true);
+        timesserved.setPattern("[0-9]*");
+        timesserved.setPreventInvalidInput(true);
+        getFormLayout().add(timesserved);
 
-        getBinder().forField(timesTasted)
+        getBinder().forField(timesserved)
                 .withConverter(
                         new StringToIntegerConverter(0, "Must enter a number."))
                 .withValidator(new IntegerRangeValidator(

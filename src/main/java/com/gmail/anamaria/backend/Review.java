@@ -34,7 +34,7 @@ public class Review implements Serializable {
      * @param category
      *            Category of beverage
      * @param count
-     *            Times tasted
+     *            Times served
      */
     public Review(int score, String name, LocalDate date, Category category,
             int count) {
