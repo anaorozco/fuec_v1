@@ -1,7 +1,14 @@
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/vaadin-flow/Lobby#?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # FUEC ELECTRONICO - CAR MII SAS. AUTHOR: ANA.OROZCO@CARMII.CO
-:coffee::tea::sake::baby_bottle::beer::cocktail::tropical_drink::wine_glass:
+
+——————————————
+ carmi.co:8080
+——————————————
+
+FUEC SAMPLE with CARMII GENERATOR: 
+
+https://s3.amazonaws.com/carmii-resources/images/sample_fuec.pdf
 
 
 The Starter demonstrates the core Vaadin Flow concepts:
