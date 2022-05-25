@@ -1,12 +1,11 @@
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/vaadin-flow/Lobby#?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+## FUEC ELECTRONICO - CAR MII SAS
+Contact: ana.orozco@carmii.co
 
-# FUEC ELECTRONICO - CAR MII SAS. AUTHOR: ANA.OROZCO@CARMII.CO
+## Description
+FUEC is an electronic document required by the Colombian Transport Ministry to operate fleets.
+This cloud-based service provides the generation of a the electrocni version of FUEC document, including a QR code for transport companies and trips information.  
 
-——————————————
- carmi.co:8080
-——————————————
-
-FUEC SAMPLE with CARMII GENERATOR: 
+FUEC Sample by CAR MII FUEC GENERATOR: 
 
 https://s3.amazonaws.com/carmii-resources/images/sample_fuec.pdf
 
